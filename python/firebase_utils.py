@@ -9,7 +9,7 @@ def connect_firebase():
     :return: google.cloud.firestore_v1.client.Client object for database
     """
 
-    cred = credentials.Certificate("donantes-bancodesangre-tarija-firebase-adminsdk-f0rlm-c85336ad82.json")
+    cred = credentials.Certificate("banco-de-sangre-tarija-c6fea7a11d50.json")
 
     initialize_app(cred,{'databaseURL': 'https://banco-de-sangre-tarija.firebaseio.com/'})
     db = firestore.client()
@@ -21,7 +21,7 @@ def get_reference_collection(db: google.cloud.firestore_v1.client.Client, id_col
     Get reference to collection using its ID
 
     :param db: google.cloud.firestore_v1.client.Client
-        cLient to comunicate with server
+        cLient to communicate with server
     :param id_coll: str
         id of collection
 

@@ -1,6 +1,5 @@
 import pandas as pd
 import google
-import datetime
 from write_data import add_document_with_id
 
 
@@ -26,7 +25,7 @@ def _import_csv_to_df (file_name: str):
     :return: DataFrame object with records of csv
     """
 
-    return pd.read_csv(file_name)
+    return pd.read_csv(file_name, keep_default_na=False)
 
 
 def _convert_df_to_dict (df: pd.DataFrame):
@@ -55,11 +54,14 @@ def import_csv_to_collection(file_name: str, coll_ref: google.cloud.firestore_v1
     """
 
     df = _import_csv_to_df(file_name)
-    df = df.astype({"id": "int64", "nombre" : "str", "apellidos": "str", "sexo": "str", "grupo sanguineo" : "str", "tipo de donante": "str", "fecha de nacimiento": "str","peso": "int", "altura": "int", "nr. de donaciones": "int", "ultima donacion": "str","rechazo": "str", "apto para donar": "str", "correo electronico": "str", "nr. de telefono": "int64", "nr. de carnet": "int64", "direccion": "str", "ciudad": "str", "departamento": "str", "fecha de registro": "str"})
+    df = df.astype({"id": "int64", "nombre": "str", "apellidos": "str", "sexo": "str", "grupo sanguineo" : "str", "tipo de donante": "str", "fecha de nacimiento": "datetime64[ns]","peso": "int", "altura": "int", "nr. de donaciones": "int", "ultima donacion": "datetime64[ns]","rechazo": "str", "apto para donar": "str", "correo electronico": "str", "nr. de telefono": "int64", "nr. de carnet": "int64", "direccion": "str", "ciudad": "str", "departamento": "str", "fecha de registro": "datetime64[ns]"})
+    df['fecha de nacimiento'] = df['fecha de nacimiento'].apply(lambda x: x.strftime('%Y-%m-%d') if not pd.isnull(x) else '')
+    df['ultima donacion'] = df['ultima donacion'].apply(lambda x: x.strftime('%Y-%m-%d') if not pd.isnull(x) else '')
+    df['fecha de registro'] = df['fecha de registro'].apply(lambda x: x.strftime('%Y-%m-%d') if not pd.isnull(x) else '')
     list_dict = _convert_df_to_dict(df)
     i=1
     for field_values in list_dict:
-        add_document_with_id(coll_ref, "donante" + str(i), field_values)
+        add_document_with_id(coll_ref, str(i), field_values)
         i = i + 1
 
 

@@ -2,6 +2,7 @@ from firebase_utils import connect_firebase, get_reference_collection, get_refer
 from read_data import query_where, query_order_by, print_query_results
 from write_data import add_document, add_document_with_id, update_document
 from upload_data import import_csv_to_collection, convert_xlsx_to_csv
+from export_data import export_to_csv
 
 
 if __name__ == '__main__':
@@ -14,10 +15,12 @@ if __name__ == '__main__':
 
     # --------------------------------------------------------------------------------
 
+    export_to_csv(db,'fact_donantes', 'test.csv')
+
     # Get reference to collection
 
     # Get reference to collection of donantes
-    donantes_ref = get_reference_collection(db, "donantes")
+    donantes_ref = get_reference_collection(db, "fact_donantes")
 
     # -----------------------------------------------------------------------------------
 
@@ -30,7 +33,7 @@ if __name__ == '__main__':
     # -----------------------------------------------------------------------------------
 
     # Get reference to a document (=donante1) from the collection (=donantes)
-    donante1_ref = get_reference_document(db, "donantes","donante1")
+    donante1_ref = get_reference_document(db, "fact_donantes","1")
 
     # -----------------------------------------------------------------------------------
 
