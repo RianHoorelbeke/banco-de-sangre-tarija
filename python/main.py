@@ -2,12 +2,16 @@ from firebase_utils import connect_firebase, get_reference_collection, get_refer
 from read_data import query_where, query_order_by, print_query_results
 from write_data import add_document, add_document_with_id, update_document
 from upload_data import import_csv_to_collection, convert_xlsx_to_csv
-from export_data import export_to_csv
+from google_bigquery import update_routine
 
 
 if __name__ == '__main__':
 
-    # convert_xlsx_to_csv("Google Sheets - Donantes Banco de Sangre.xlsx")
+    routine_body = "TIMESTAMP_MILLIS(\nSAFE_CAST(JSON_EXTRACT(json, '$._seconds') AS INT64) * 1000 + 7200000 + SAFE_CAST(\nSAFE_CAST(JSON_EXTRACT(json, '$._nanoseconds') AS INT64) / 1E6 AS INT64))"
+    routine_id = "banco-de-sangre-tarija.firestore_fact_donantes.firestoreTimestamp"
+    update_routine(routine_id, routine_body)
+
+    # convert_xlsx_to_csv("donantes.xlsx")
 
     # Connect with database
     # google.cloud.firestore_v1.client.Client object to communicate with database
@@ -15,7 +19,7 @@ if __name__ == '__main__':
 
     # --------------------------------------------------------------------------------
 
-    export_to_csv(db,'fact_donantes', 'test.csv')
+    # export_to_csv(db,'fact_donantes', 'test.csv')
 
     # Get reference to collection
 
@@ -27,7 +31,7 @@ if __name__ == '__main__':
     # Upload data
 
     # Upload data using csv
-    file_name = "donantes_banco_de_sangre_tarija.csv"
+    file_name = "donantes.csv"
     import_csv_to_collection(file_name, donantes_ref)
 
     # -----------------------------------------------------------------------------------

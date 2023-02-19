@@ -54,10 +54,31 @@ def import_csv_to_collection(file_name: str, coll_ref: google.cloud.firestore_v1
     """
 
     df = _import_csv_to_df(file_name)
-    df = df.astype({"id": "int64", "nombre": "str", "apellidos": "str", "sexo": "str", "grupo sanguineo" : "str", "tipo de donante": "str", "fecha de nacimiento": "datetime64[ns]","peso": "int", "altura": "int", "nr. de donaciones": "int", "ultima donacion": "datetime64[ns]","rechazo": "str", "apto para donar": "str", "correo electronico": "str", "nr. de telefono": "int64", "nr. de carnet": "int64", "direccion": "str", "ciudad": "str", "departamento": "str", "fecha de registro": "datetime64[ns]"})
-    df['fecha de nacimiento'] = df['fecha de nacimiento'].apply(lambda x: x.strftime('%Y-%m-%d') if not pd.isnull(x) else '')
-    df['ultima donacion'] = df['ultima donacion'].apply(lambda x: x.strftime('%Y-%m-%d') if not pd.isnull(x) else '')
-    df['fecha de registro'] = df['fecha de registro'].apply(lambda x: x.strftime('%Y-%m-%d') if not pd.isnull(x) else '')
+    df['apto para donar'] = df['apto para donar'].apply(
+        lambda x: 1 if x == 'Si' else 0)
+    df['apto para donar'] = df['apto para donar'].astype('bool')
+
+    df['fecha de nacimiento'] = pd.to_datetime(df['fecha de nacimiento'])
+    df['fecha de nacimiento'] = df['fecha de nacimiento'].apply(lambda x: x.date())
+
+    df['fecha de registro'] = pd.to_datetime(df['fecha de registro'])
+    df['fecha de registro'] = df['fecha de registro'].apply(lambda x: x.date())
+
+    df['ultima donacion'] = pd.to_datetime(df['ultima donacion'])
+    df['ultima donacion'] = df['ultima donacion'].apply(lambda x: x.date())
+
+    df['voluntario'] = True
+    df['rechazado'] = False
+
+    df = df.drop('ultima donacion', axis=1)
+    df = df.drop('rechazo', axis=1)
+
+    df = df.astype({"nombre": "string", "apellidos": "string", "sexo": "string", "grupo sanguineo": "string",
+                    "tipo de donante": "string", "correo electronico": "string",
+                    "direccion": "string", "ciudad": "string", "departamento": "string", "fecha de nacimiento": "datetime64[ns]", "fecha de registro": "datetime64[ns]"})
+
+    print(df.dtypes)
+
     list_dict = _convert_df_to_dict(df)
     i=1
     for field_values in list_dict:

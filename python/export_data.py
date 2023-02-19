@@ -23,7 +23,7 @@ def export_to_csv(db: google.cloud.firestore_v1.client.Client, id_coll: str):
 
     coll_ref = get_reference_collection(db, id_coll)
     docs = coll_ref.stream()
-    for doc in docs:
+    #for doc in docs:
 
 
 

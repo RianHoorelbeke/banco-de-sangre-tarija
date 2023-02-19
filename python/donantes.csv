@@ -1,11 +1,11 @@
-id,nombre,apellidos,sexo,grupo sanguineo,tipo de donante,fecha de nacimiento,peso,altura,nr. de donaciones,ultima donacion,rechazo,apto para donar,correo electronico,nr. de telefono,nr. de carnet,direccion,ciudad,departamento,fecha de registro
-1,María Cristina,Nina Limachi,Mujer,O+,Donante de Sangre,,55,165,0,,,Si,crisninali52@gmail.com,59165825486,12407299,José María de Aguirre s/n,Tarija,Tarija,2021-01-06
-2,Sebastian,Vildoso Ramos,Hombre,A+,Donante de Sangre,,68,180,0,,,Si,leo_vildoso@hotmail.com,59179268578,95572012,"Plaza Avaroa, final de la calle Sucre",Tarija,Tarija/Cercado/Tarija,2021-01-14
-3,José Esteban,Mariscal gutierrez,Hombre,O+,Donante de Sangre,,70,168,0,,,Si,pepo_mariscal@hotmail.com,59175144442,5034234,Juan XXIII,Tarija,Cercado,2021-01-28
-4,Juan Manuel,Palacios Labra,Hombre,O+,Donante de Sangre,,88,173,0,,,Si,manuel21pala@gmail.com,59172950577,7148738,"b/ San Jorge 2, c/ Julio la Faye s/n",Tarija,Cercado,2021-03-01
-5,Carmen cecilia,Romero tacuri,Mujer,O+,Donante de Sangre,,64,160,0,,,Si,jjbceci@hotmail.com,59165830337,5108564,b/ San antonio,Tarija,Tarija,2021-03-31
-6,María Isabel,Espinoza Vidaurre,Mujer,O+,Donante de Sangre,,83,163,0,,,Si,espinozavidaurremariaisabel96@gmail.com,59175114932,7130062,av/ circunvalación esq/ Gran Chaco,Tarija,Tarija,2021-04-23
-7,Danilo,Vedia Perez,Hombre,O+,Donante de Sangre,,63,163,0,,,Si,davedia@outlook.es,59175147891,10624478,b/ Montecristo,Tarija,Cercado,2021-04-29
+id,nombre,apellidos,sexo,grupo sanguineo,tipo de donante,fecha de nacimiento,peso,altura,donaciones,ultima donacion,rechazo,apto para donar,correo electronico,telefono,carnet,direccion,ciudad,departamento,fecha de registro
+1,María Cristina,Nina Limachi,Mujer,O+,Donante de Sangre,1901-01-01,55,165,0,,,Si,crisninali52@gmail.com,59165825486,12407299,José María de Aguirre s/n,Tarija,Tarija,2021-01-06
+2,Sebastian,Vildoso Ramos,Hombre,A+,Donante de Sangre,1901-01-01,68,180,0,,,Si,leo_vildoso@hotmail.com,59179268578,95572012,"Plaza Avaroa, final de la calle Sucre",Tarija,Tarija/Cercado/Tarija,2021-01-14
+3,José Esteban,Mariscal gutierrez,Hombre,O+,Donante de Sangre,1901-01-01,70,168,0,,,Si,pepo_mariscal@hotmail.com,59175144442,5034234,Juan XXIII,Tarija,Cercado,2021-01-28
+4,Juan Manuel,Palacios Labra,Hombre,O+,Donante de Sangre,1901-01-01,88,173,0,,,Si,manuel21pala@gmail.com,59172950577,7148738,"b/ San Jorge 2, c/ Julio la Faye s/n",Tarija,Cercado,2021-03-01
+5,Carmen cecilia,Romero tacuri,Mujer,O+,Donante de Sangre,1901-01-01,64,160,0,,,Si,jjbceci@hotmail.com,59165830337,5108564,b/ San antonio,Tarija,Tarija,2021-03-31
+6,María Isabel,Espinoza Vidaurre,Mujer,O+,Donante de Sangre,1901-01-01,83,163,0,,,Si,espinozavidaurremariaisabel96@gmail.com,59175114932,7130062,av/ circunvalación esq/ Gran Chaco,Tarija,Tarija,2021-04-23
+7,Danilo,Vedia Perez,Hombre,O+,Donante de Sangre,1901-01-01,63,163,0,,,Si,davedia@outlook.es,59175147891,10624478,b/ Montecristo,Tarija,Cercado,2021-04-29
 8,Virna Belen,Lopez Luna,Mujer,O+,Donante de Sangre,1996-09-08,68,150,0,,,Si,belenlopezluna7@gmail.com,59175140503,7198365,b/ Jesus de Nazaret,Tarija,Tarija,2021-06-09
 9,Hector,Padilla,Hombre,A+,Donante de Sangre,1983-11-24,83,162,0,,,Si,hachemoncada@hotmail.com,59168497818,5655199,Colinas de Santa Barbara,Tarija,San Lorenzo,2021-06-09
 10,Carlos Andrés,Oblitas,Hombre,O-,Donante de Sangre,1980-09-19,99,175,0,,,Si,carlosoblitas@gmail.com,59170213994,3389560,c/ 7 San Mateo,Tarija,Tarija,2021-06-09
@@ -113,7 +113,7 @@ id,nombre,apellidos,sexo,grupo sanguineo,tipo de donante,fecha de nacimiento,pes
 112,Noemi,Quispe Canaza,Mujer,O+,Donante de Sangre,1994-07-22,68,150,0,,,Si,nquispecanaza2022@gmail.com,59161859252,10657818,b/ Jesus de Nazareth,Tarija,Cercado,2022-05-22
 113,Jose Luis,Baldiviezo Duran,Hombre,O+,Donante de Sangre,1985-01-05,90,171,0,,,Si,,59160267465,5814809,b/ Pedro Antonio Flores pas/ Saladillo,Tarija,Cercado,2022-05-22
 114,Maxima,Calle,Mujer,O+,Donante de Sangre,1998-04-26,55,155,0,,,Si,,59178703591,7217643,b/ Trigal,Tarija,Cercado,2022-05-24
-115,Nelson Hans,Gallardo Meriles,Hombre,O+,Donante de Sangre,1996-09-12,80,175,0,,,Si,,59168730597,7235301,z/ Centro San Aandres,Tarija,Cercado,2022-05-24
+115,Nelson Hans,Gallardo Meriles,Hombre,O+,Donante de Sangre,1996-09-12,80,175,0,,,Si,,59168730597,7235301,z/ Centro San Aandres ,Tarija,Cercado,2022-05-24
 116,Mayra,Lopez,Mujer,A+,Donante de Sangre,2000-09-15,67,174,0,,,Si,mayra.mglm9@gmail.com,59165803337,7152645,b/ Miraflores c/ 8,Tarija,Cercado,2022-05-24
 117,Alicia Soledad,Carrasco Campero,Mujer,O+,Donante de Sangre,2002-07-15,57,160,0,,,Si,,59168702912,7243883,b/ Aeropuerto,Tarija,Cercado,2022-05-25
 118,Gessica,Mallon Garcia,Mujer,O+,Donante de Sangre,1993-03-21,69,155,0,,,Si,,59176187921,7175450,b/ Lourdes,Tarija,Cercado,2022-05-25
@@ -137,7 +137,7 @@ id,nombre,apellidos,sexo,grupo sanguineo,tipo de donante,fecha de nacimiento,pes
 136,Silvia Cristina,Flores Michaga,Mujer,O+,Donante de Sangre,1986-01-21,80,155,0,,,Si,crisilflomich2022@gmail.com,59173498122,5807739,b/ San Bernardo c/ Luis Castrillo y Nestor Paz,Tarija,Cercado,2022-05-26
 137,Manuel Alejandro,Fernandes Budia,Hombre,O+,Donante de Sangre,1989-07-24,80,162,0,,,Si,mfernandezb.2022@gmail.com,59165810206,10663172,b/ Los Chapacos,Tarija,Cercado,2022-05-26
 138,Jose Gabriel,Delgado Amador,Hombre,O+,Donante de Sangre,1996-09-30,73,172,0,,,Si,jgdelgado2022@gmail.com,59169333937,7216490,b/ 15 de Junio av/ San Pedro De La Buena Vista,Tarija,Cercado,2022-05-26
-139,Kebin Rodrigo,Galean Delgado,Hombre,O+,Donante de Sangre,2002-12-19,60,167,0,,,Si,kgalean2022@gmil.com,59163777074,10692651,b/ 15 de Junio av/ San Pedro De La Buena Vista,Tarija,Avilez,2022-05-26
+139,Kebin Rodrigo,Galean Delgado,Hombre,O+,Donante de Sangre,2002-12-19,60,167,0,,,Si,kgalean2022@gmail.com,59163777074,10692651,b/ 15 de Junio av/ San Pedro De La Buena Vista,Tarija,Avilez,2022-05-26
 140,Mayba Lilian,Delfin Orosco,Mujer,O+,Donante de Sangre,1987-07-01,59,160,0,,,Si,delfinoroscomaybalilian@gmail.com,59160252994,7156887,b/ Constructor c/ Caigua Y Gran Chaco,Tarija,Cercado,2022-05-26
 141,Roxana Schneider,Aduviri Rodriguez,Mujer,O+,Donante de Sangre,1977-12-12,75,163,0,,,Si,,59160259066,5001335,b/ Mendez Aarcos c/ 11 y av/ Los Molles,Tarija,Cercado,2022-05-26
 142,Freddy,Galarza Perales,Hombre,O+,Donante de Sangre,1976-05-08,105,170,0,,,Si,freddygalarzaperales63@gmail.com,59177874551,4127415,av/ Panamericana 2 km. a Tomatitas,Tarija,Cercado,2022-05-26
@@ -189,7 +189,7 @@ id,nombre,apellidos,sexo,grupo sanguineo,tipo de donante,fecha de nacimiento,pes
 188,Melisa,Pinedo Marca,Mujer,O+,Donante de Sangre,2001-05-30,66,155,0,,,Si,pinedomelisa40@gmail.com,59165808079,8429125,b/ San Salvador,Tarija,Cercado,2022-07-27
 189,Carlos Sergio,Garcia Clemente,Hombre,O+,Donante de Sangre,2001-02-15,66,165,0,,,Si,carlos.garcia4aisec@com.net,59167260575,10740542,b/ Nueva Esperanza,Tarija,Cercado,2022-07-27
 190,Luciana Abigail,Sanchez Mealla,Mujer,O+,Donante de Sangre,2003-02-09,54,157,0,,,Si,lucianasanchez208@gmail.com,59178226827,10693374,b/ Avaroa c/ pando,Tarija,Cercado,2022-07-27
-191,Mariana Gisell,Torrez Vargas,Mujer,O+,Donante de Sangre,1998-02-25,60,170,0,,,Si,marianitagisell.116@gmail.com,59160271510,5808004,b/ Las Panosas c/ Delgadillo esquina Avaroa,Tarija,Cercado,2022-07-28
+191,Mariana Gisell,Torrez Vargas,Mujer,O+,Donante de Sangre,1998-02-25,60,170,0,,,Si,marianitagisell.116@gmail.com,59160271510,5808004,b/ Las Panosas c/ Delgadillo esquina Avaroa ,Tarija,Cercado,2022-07-28
 192,Cristhian Gabriel,Estrada Flores,Hombre,O+,Donante de Sangre,1990-01-02,89,174,0,,,Si,crisgef1234567890@gmail.com,59169327797,7185564,b/ San Roque,Tarija,Cercado,2022-07-28
 193,Gustavo,Amador Portal,Hombre,B+,Donante de Sangre,1996-01-16,75,175,0,,,Si,tavitex234@gmail.com,59172981888,5305081,subiendo Mendez Arcos,Tarija,Cercado,2022-07-28
 194,Alvaro Fernando,Diaz Ramos,Hombre,O+,Donante de Sangre,2003-01-03,88,167,0,,,Si,diazramosalvarofernando@gmail.com,59168340078,10674547,b/ San Roque,Tarija,Cercado,2022-07-28
@@ -205,7 +205,7 @@ id,nombre,apellidos,sexo,grupo sanguineo,tipo de donante,fecha de nacimiento,pes
 204,alejandra janeth,noguera torres,Mujer,A+,Donante de Sangre,2001-06-12,52,153,0,,,Si,,59167392887,5811724,b/ IV Centenario,Tarija,Cercado,2022-07-29
 205,jorge luis,miranda cruz,Hombre,B+,Donante de Sangre,1997-10-28,117,180,0,,,Si,jorge.luis.miranda.cruz7@gmail.com,59165837997,1054678,b/ Aeropuerto,Tarija,Cercado,2022-07-29
 206,miguel angel,armijo,Hombre,A+,Donante de Sangre,2000-06-07,96,187,0,,,Si,armijom566@gmail.com,59178235592,7212393,san jorge 2,Tarija,Cercado,2022-07-29
-207,nayara,cossio calle,Mujer,O+,Donante de Sangre,2002-05-01,64,156,0,,,Si,cossiocallemayara@gmail.com,59172001002,9086408,av/ Heroes del Chaco Nº 2656,Tarija,Cercado,2022-07-29
+207,nayara,cossio calle,Mujer,O+,Donante de Sangre,2002-05-01,64,156,0,,,Si,cossiocallemayara@gmail.com,59172001002,9086408,av/ Heroes del Chaco  Nº 2656,Tarija,Cercado,2022-07-29
 208,Maria Rene,Miranda Sandy,Mujer,O+,Donante de Sangre,2002-11-26,61,165,0,,,Si,,59160267352,10665210,San Lorenzo,Tarija,Mendez,2022-07-29
 209,Marcelo,Huanca Caceres,Hombre,O+,Donante de Sangre,2000-10-12,60,167,0,,,Si,,59176195615,10623962,c/ Ismael Montes S/N,Tarija,Cercado,2022-07-29
 210,Cesar Cecilio,Duran Gutierrez,Hombre,O+,Donante de Sangre,1996-05-17,76,169,0,,,Si,,59167998128,12723371,b/ La Loma,Tarija,Cercado,2022-07-29
@@ -243,7 +243,7 @@ id,nombre,apellidos,sexo,grupo sanguineo,tipo de donante,fecha de nacimiento,pes
 242,Daniela,Medina,Mujer,O+,Donante de Sangre,1989-03-02,76,164,0,,,Si,,59161128073,7136466,c/ Colon b/ San Marcos,Tarija,Cercado,2022-07-29
 243,Violeta,Martinez,Mujer,O+,Donante de Sangre,1985-12-12,78,160,0,,,Si,dra.violeta.martinez.vm@gmail.com,59175127840,1887305,b/ Senac c/ Mariano Colodro Nº 470,Tarija,Cercado,2022-07-29
 244,Carlos Andres,Oblitas Álvarez,Hombre,O-,Donante de Sangre,1980-09-19,97,176,0,,,Si,carlosoblitas@gmail.com,59170213994,3389560,c/ 7 sn San Mateo,Tarija,Cercado,2022-08-02
-245,william alejandro,acuña corrillo,Hombre,O+,Donante de Sangre,1983-11-13,67,165,0,,,Si,walas1311@hotmail.com,59176820429,5783739,c/ antofagasta,Sucre,oropeza,2022-08-03
+245,william alejandro,acuña corrillo,Hombre,O+,Donante de Sangre,1983-11-13,67,165,0,,,Si,walas1311@hotmail.com,59176820429,5783739,c/ antofagasta,Sucre,Oropeza,2022-08-03
 246,Marcia andrea,Vidaurre alfaro,Mujer,O+,Donante de Sangre,1983-05-09,80,163,0,,,Si,,59178237740,5057983,b/ San Luis,Tarija,Cercado,2022-08-03
 247,Miguel Angel,Arenas Zenteno,Hombre,O-,Donante de Sangre,2000-04-24,64,169,0,,,Si,miguel.maaz24@gmail.com,59175112571,7216836,b/ La loma,Tarija.,Cercado,2022-08-05
 248,Beatriz Isabel,Cáceres García,Mujer,O+,Donante de Sangre,1996-10-16,71,160,0,,,Si,bea96cg@gmail.com,59170224567,5798409,b/ Juan XXIII c/ Luis Rivero Nº 772,Tarija,Cercado,2022-08-06
@@ -251,4 +251,14 @@ id,nombre,apellidos,sexo,grupo sanguineo,tipo de donante,fecha de nacimiento,pes
 250,Noemi Diana,Cayo Ibañez,Mujer,O+,Donante de Sangre,2001-10-22,50,153,0,,,Si,,59177871883,7243300,b/ Tabladita av/ San Antonio,Tarija,Cercado,2022-08-15
 251,Hugo,Barrientos,Hombre,A+,Donante de Sangre,2017-07-08,92,178,0,,,No,,59171863331,4145961,c/ Santa cruz Nº 779,Tarija,Cercado,2022-08-16
 252,Ana Leidy,Liso,Mujer,A+,Donante de Sangre,2002-11-02,55,145,0,,,Si,analeidy69249370@gmail.com,59173820257,14690974,Km 13 doble via la guardia,Santa Cruz,La guardia,2022-08-19
-253,Dussan gabriel,Loayza lopez,Hombre,B+,Donante de Sangre,1996-01-09,90,165,0,,,Si,tacuba159@gmail.com,59177179084,10657885,B/ paraiso,Tarija,Cercado,2022-08-24
+253,Dussan gabriel,Loayza lopez,Hombre,B+,Donante de Sangre,1996-01-09,90,165,0,,,Si,tacuba159@gmail.com,59177179084,10657885,b/ paraiso,Tarija,Cercado,2022-08-24
+254,Veronica Daniela,Urbano Donaire,Mujer,O+,Donante de Sangre,1983-01-16,66,153,0,,,Si,urbanoveronica6@gmail.com,59172908309,5058893,b/ San Bernardo av/ circunvalacion,Tarija,Cercado,2022-08-09
+255,Luis Fernando,Candia Ortiz,Hombre,A+,Donante de Sangre,1988-08-14,95,173,0,,,Si,fernando_candia_ortiz@hotmail.com,59174673230,6946187,av/ Arboleda c/ los pinos,Santa Cruz,,2022-08-09
+256,Camila,Urquidi,Mujer,A+,Donante de Sangre,1995-04-20,88,172,0,,,Si,cami.urquidi.bazam@gmail.com,59176193582,5812515,b/ San Geronimo c/ Jorge Barrenechea,Tarija,Cercado,2022-09-28
+257,Nathalia,Aguirre,Mujer,A+,Donante de Sangre,1993-05-06,120,170,0,,,Si,na2324134@gmail.com,59165811289,10742950,b/ Juan 23 c/ Voltaire,Tarija,Cercado,2022-10-22
+258,Agustina,Martinez,Mujer,O+,Donante de Sangre,1989-06-03,68,163,0,,,Si,anghym49@gmail.com,59172946603,7203733,b/ 4 de julio c/ Edmundo zalasar Nº 555,Tarija,Cercado,2022-11-16
+259,Camila,Serrano,Mujer,O+,Donante de Sangre,2004-02-25,58,165,0,,,Si,camiserrano454sis@gmail.com,59174550145,7188455,b/ El Tejar c/ Celedonio Avila,Tarija,Cercado,2022-12-13
+260,Weimar Freddy,Echalar Galean,Hombre,O+,Donante de Sangre,1991-06-01,75,170,0,,,Si,abg.weimar91@gmail.com,59168696877,10620163,b/ Los Olivos,Tarija,Cercado,2022-12-20
+261,Maria Luisa,Ortiz Farias,Mujer,A+,Donante de Sangre,1990-05-07,70,161,0,,,Si,marialuisa.ortizfarias@gmail.com,59179263611,7252491,b/ San Jorge 1 av/ Periodista casi esquina La Faye ,Tarija,Cercado,2023-02-01
+262,Hernan,Luis,Hombre,O+,Donante de Sangre,1994-11-19,76,175,0,,,Si,joseluisrodrigues94@gmail.com,59174543076,13418076,,Cochabamba,Cercado,2023-02-04
+263,Martin,Ochoa Castañon,Hombre,O-,Donante de Sangre,1994-11-18,82,185,0,,,Si,tincho.ochoa.quince@gmail.com,59177179257,7143681,c/ oconnor Nº 322,Tarija,Cercado,2023-02-10
